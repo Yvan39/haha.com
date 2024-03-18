@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cycling Hobby</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ccc; 
+}
+
+
+section {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+}
+.gallery-images img:hover {
+    transform: scale(1.05); 
+}
+#about {
+    background-color: #fff; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#about h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+#about p {
+    color: #666; 
+    font-size: 16px; 
+}
+
+/* Cycling Tips section */
+#tips {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#tips h2 {
+    color: #333;
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+#tips ul {
+    color: #666; 
+    font-size: 16px; 
+}
+
+#tips ul li {
+    margin-bottom: 8px; 
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Cycling Hobby</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Cycling</h2>
+        <p>Cycling is not just a hobby, it's a lifestyle. Whether you enjoy leisurely rides through the countryside or intense mountain biking adventures, cycling offers something for everyone.</p>
+    </section>
+    <section id="tips">
+        <h2>Cycling Tips</h2>
+        <ul>
+            <li>Always wear a helmet for safety.</li>
+            <li>Maintain your bike regularly.</li>
+            <li>Stay hydrated during rides.</li>
+            <li>Obey traffic laws and be courteous to other road users.</li>
+            <li>Invest in proper cycling gear for comfort.</li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Share your cycling adventures with others. Capture breathtaking views, memorable moments, and the joy of cycling through photos and videos.</p>
+        <div class="gallery-images">
+            <img src="./images/image1.jpg" alt="Cycling Adventure 1">
+            <img src="./images/image2.jpg" alt="Cycling Adventure 2">
+            <img src="./images/image3.jpg" alt="Cycling Adventure 3">
+            <img src="./images/image4.jpg" alt="Cycling Adventure 4">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Cycling Hobby</p>
+    </footer>
+</body>
+</html>
